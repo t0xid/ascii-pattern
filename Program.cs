@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -120,7 +120,7 @@ namespace asciiMazeGen
                             for (int u = 0; u < patternArr.Length; u++)
                             {
                                 Console.WriteLine(patternArr[u]);
-                                Console.SetCursorPosition(y , u + 1 + i);
+                                Console.SetCursorPosition(y, u + 1 + i);
                             }
                             countA++;
                             Console.SetCursorPosition((w - 1) * countA + countC, i);
@@ -312,7 +312,7 @@ namespace asciiMazeGen
                             for (int u = 0; u < tmpArr.Length; u++)
                             {
                                 Console.WriteLine(tmpArr[u]);
-                                Console.SetCursorPosition(y , u + 1 + i);
+                                Console.SetCursorPosition(y, u + 1 + i);
                             }
                             countA++;
                             Console.SetCursorPosition((w - 1) * countA + countC, i);
@@ -326,7 +326,7 @@ namespace asciiMazeGen
                 countB++;
             }
 
-            Console.SetCursorPosition(0, h * mazeH);
+            Console.SetCursorPosition(0, (h * mazeH) + 1);
 
             Console.WriteLine("Feel free to select, copy, and paste the pattern you got into a text file now");
             Console.Write("Press any key to close the program...");
